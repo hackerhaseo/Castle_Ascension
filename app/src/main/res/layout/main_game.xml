@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.castleascension.game_main">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/black"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="362dp"
+        android:layout_height="222dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textbox"
+        android:onClick="clickMe"
+        android:text="A long time ago, in a kingdom far far away..."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="329dp"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn2"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_alignStart="@+id/btn"
+        android:background="@drawable/textbox"
+        android:onClick="click1"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn3"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_alignStart="@+id/btn"
+        android:background="@drawable/textbox"
+        android:onClick="click2"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/textbox"
+        android:onClick="click3"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="250dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="181dp"
+        android:layout_height="140dp"
+        android:background="@drawable/textbox"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:onClick="retry"
+        android:text="YES"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="181dp"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/yes"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:onClick="mainMenu"
+        android:text="NO"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="362dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/btn1"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_alignStart="@+id/btn"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/hint"
+        android:layout_alignLeft="@+id/hint"
+        android:layout_alignStart="@+id/hint"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/enemy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/hint"
+        android:background="@drawable/textbox"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="362dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/you"
+        android:layout_alignStart="@+id/you"
+        android:layout_below="@+id/enemy"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:text="You are dead. Retry?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back"
+        android:onClick="mainMenu" />
+
+    <Button
+        android:id="@+id/sounds"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/confirm"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back"
+        android:background="@drawable/onsound"
+        android:onClick="mute" />
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/sounds"
+        android:layout_toRightOf="@+id/sounds"
+        android:background="@drawable/textbox"
+        android:onClick="skip"
+        android:text="1"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>

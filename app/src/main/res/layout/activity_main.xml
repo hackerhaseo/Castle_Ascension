@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.castleascension.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_bg"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/toggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:onClick="game"
+        android:text="Start Game"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn3"
+        android:layout_alignRight="@+id/btn1"
+        android:layout_alignEnd="@+id/btn1"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:onClick="options"
+        android:text="Options"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/toggle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginBottom="103dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:onClick="about"
+        android:text="About Us"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_below="@+id/btn1"
+        android:text="Music:"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/textbox"
+        android:textColor="#FFF"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

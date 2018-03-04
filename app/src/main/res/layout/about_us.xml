@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.castleascension.us_about">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/clean_bg" />
+
+    <ImageView
+        android:id="@+id/gameworks"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/back"
+        android:layout_alignLeft="@+id/back"
+        android:layout_alignStart="@+id/back"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:src="@drawable/gameworks" />
+
+    <ImageView
+        android:id="@+id/prof_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/back"
+        android:layout_alignRight="@+id/back"
+        android:layout_alignTop="@+id/gameworks"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:src="@drawable/prof_logo" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/textbox"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Joshua Daniel C. Tubalinal\nProgrammer and Storywriter\n \nKian Jacob Anthony C. Tubalinal\nComposer\n \nJairo Maverick C. Tubalinal\nCharacters and Background Designer/Editor\n \nDoc. Arvin de la Cruz\nProfessor"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/textbox"
+        android:onClick="main"
+        android:padding="10dp"
+        android:text="Back to Main Menu"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat"/>
+</RelativeLayout>
